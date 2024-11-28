@@ -164,19 +164,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 93094475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95954a2a8ca1ea743acda9d5a381f41e, type: 3}
+  m_Script: {fileID: 11500000, guid: d842553b4e2fa9747a98d3eaf7518b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Magic Bolt
-  icon: {fileID: 21300000, guid: c8585b68a92b5d440992ddd7d1b1a3d6, type: 3}
+  name: MagicBolt
+  icon: {fileID: 0}
   cooldown: 2
   level: 0
-  maxLevel: 20
-  damageMultiplier: 1
+  maxLevel: 10
+  damageMultiplier: 0
   range: 20
   targetsNumber: 1
   prefab: {fileID: 4925261270886413469, guid: 9e7d498176b736345bf865cbe81c8b68, type: 3}
-  castSource: {fileID: 912901139}
+  castSource: {fileID: 2025839826}
   lifetime: 10
   currentXp: 0
   xpToLevelUp: 10
@@ -224,14 +224,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 158121235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 531418f1877c4ab4097d0e64e59b1411, type: 3}
+  m_Script: {fileID: 11500000, guid: 555e56f4a39714c4d9af7c8c9d4092ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Increase player speed (+10%)
+  name: Speed
   icon: {fileID: 0}
   cooldown: 0
   level: 0
-  maxLevel: 5
+  maxLevel: 10
   damageMultiplier: 0
   range: 20
   targetsNumber: 1
@@ -241,7 +241,7 @@ MonoBehaviour:
   currentXp: 0
   xpToLevelUp: 10
   currentSpeedBoost: 0
-  speedIncrease: 10
+  speedIncrease: 11
 --- !u!1 &335372177
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPool: {fileID: 335372183}
   cellSize: 5
+  loadingScene: 0
 --- !u!114 &335372183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +340,7 @@ Transform:
   - {fileID: 1194949304}
   - {fileID: 1097234182}
   - {fileID: 942622598}
+  - {fileID: 1380845370}
   m_Father: {fileID: 2025839832}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -383,10 +385,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 942622597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfa205f30941a714b8e2fdbe631d49d6, type: 3}
+  m_Script: {fileID: 11500000, guid: a62db4d676712ba40aa0d267b0e2ed81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Increase pickup range (+20%)
+  name: Pickup range
   icon: {fileID: 0}
   cooldown: 0
   level: 0
@@ -400,7 +402,7 @@ MonoBehaviour:
   currentXp: 0
   xpToLevelUp: 10
   pickupRange: 2
-  rangeMultiplier: 20
+  rangeMultiplier: 5
 --- !u!1 &957434089
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,11 +444,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 957434089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87eadb2d2385ab247a9794a752d0f6cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 14258e9415e576b488bbf9cfbce2c0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Satellite
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  name: Staellite
+  icon: {fileID: 21300000, guid: 5b56d9fa0e8bd6e409ed188db38a692c, type: 3}
   cooldown: 0
   level: 0
   maxLevel: 5
@@ -454,12 +456,12 @@ MonoBehaviour:
   range: 20
   targetsNumber: 1
   prefab: {fileID: 3630981340020379386, guid: d0926ffd37d7dd74e827a25e13498b9e, type: 3}
-  castSource: {fileID: 957434089}
+  castSource: {fileID: 2025839826}
   lifetime: 10
   currentXp: 0
   xpToLevelUp: 10
-  satelliteRadius: 6
-  satelliteSpeed: 0.5
+  satelliteRadius: 5
+  satelliteSpeed: 15
   damageIncrement: 1.1
   speedIncrement: 0.1
 --- !u!1 &1097234181
@@ -503,15 +505,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1097234181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8026c9c0e713ca749a301f98acba3f71, type: 3}
+  m_Script: {fileID: 11500000, guid: 41186ac4c9a5d37499f7302618bf3f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Increase damage (+5%)
+  name: Damage
   icon: {fileID: 0}
   cooldown: 0
   level: 0
-  maxLevel: 5
-  damageMultiplier: 5
+  maxLevel: 10
+  damageMultiplier: 0
   range: 20
   targetsNumber: 1
   prefab: {fileID: 0}
@@ -520,7 +522,7 @@ MonoBehaviour:
   currentXp: 0
   xpToLevelUp: 10
   currentDamageBoost: 0
-  damageIncrease: 5
+  damageIncrease: 0
 --- !u!1 &1100828085
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,11 +689,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1194949303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ca2434916394bb47a89c423110e8cdc, type: 3}
+  m_Script: {fileID: 11500000, guid: dfad82d6db577a940bf506563c4becdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Decrease cooldown (-2.5%)
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  name: Cooldown
+  icon: {fileID: 0}
   cooldown: 0
   level: 0
   maxLevel: 10
@@ -704,7 +706,7 @@ MonoBehaviour:
   currentXp: 0
   xpToLevelUp: 10
   cooldownPercentage: 0
-  cooldownIncrement: 2.5
+  cooldownIncrement: 5
 --- !u!1 &1266639272
 GameObject:
   m_ObjectHideFlags: 3
@@ -800,6 +802,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1380845369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1380845370}
+  - component: {fileID: 1380845371}
+  m_Layer: 0
+  m_Name: Meteor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1380845370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380845369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 912901140}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1380845371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380845369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb623fc211eeaa489a0ce67b0cb7538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Meteor
+  icon: {fileID: 21300000, guid: cfeb52c1158468445be82e5c877e4f1a, type: 3}
+  cooldown: 5
+  level: 0
+  maxLevel: 15
+  damageMultiplier: 0
+  range: 20
+  targetsNumber: 1
+  prefab: {fileID: 5847451972866627544, guid: 73df71ee0e4876849a6badb44c0a65ec, type: 3}
+  castSource: {fileID: 0}
+  lifetime: 10
+  currentXp: 0
+  xpToLevelUp: 10
+  damageIncrement: 1.1
+  cooldownDecrement: 0.05
+  sizeMultiplier: 1
 --- !u!1 &1484051525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e88d4491ec76444da901bcd63360afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 10
   joystick: {fileID: 0}
   rotationSpeed: 5
   rb: {fileID: 2025839829}
@@ -1329,14 +1392,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067804961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e4bd041b333b0947b9a169b653d6728, type: 3}
+  m_Script: {fileID: 11500000, guid: cdb74dfb8d3aae849b5140d37144d453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Increase max health (+20%)
+  name: Max health
   icon: {fileID: 0}
   cooldown: 0
   level: 0
-  maxLevel: 5
+  maxLevel: 10
   damageMultiplier: 0
   range: 20
   targetsNumber: 1
@@ -1345,4 +1408,4 @@ MonoBehaviour:
   lifetime: 10
   currentXp: 0
   xpToLevelUp: 10
-  healthIncrease: 20
+  healthIncrease: 5
