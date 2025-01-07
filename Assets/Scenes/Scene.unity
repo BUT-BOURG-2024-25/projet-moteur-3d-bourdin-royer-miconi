@@ -167,9 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d842553b4e2fa9747a98d3eaf7518b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: MagicBolt
-  icon: {fileID: 0}
-  cooldown: 2
+  name: Magic Bolt
+  icon: {fileID: 21300000, guid: b450d0b398880cb458f83d1a01b399ca, type: 3}
+  cooldown: 3
   level: 0
   maxLevel: 10
   damageMultiplier: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   lifetime: 10
   currentXp: 0
   xpToLevelUp: 10
-  speed: 10
+  speed: 15
   damageIncrement: 1.1
   cooldownDecrement: 0.05
 --- !u!1 &158121235
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Speed
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 6960c6bd5088317429f7e0e033bee813, type: 3}
   cooldown: 0
   level: 0
   maxLevel: 10
@@ -240,8 +240,8 @@ MonoBehaviour:
   lifetime: 10
   currentXp: 0
   xpToLevelUp: 10
-  currentSpeedBoost: 0
-  speedIncrease: 11
+  currentSpeedBoost: 5
+  speedIncrease: 5
 --- !u!1 &335372177
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Pickup range
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 08c71e4e0565fe4469d1e0a593047156, type: 3}
   cooldown: 0
   level: 0
   maxLevel: 5
@@ -447,8 +447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14258e9415e576b488bbf9cfbce2c0c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Staellite
-  icon: {fileID: 21300000, guid: 5b56d9fa0e8bd6e409ed188db38a692c, type: 3}
+  name: Satellite
+  icon: {fileID: 21300000, guid: eed44235dcbd621438f7c0c4f05e2356, type: 3}
   cooldown: 0
   level: 0
   maxLevel: 5
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Damage
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: a2563f2b8dbc4044b9a50537d3a29962, type: 3}
   cooldown: 0
   level: 0
   maxLevel: 10
@@ -693,7 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Cooldown
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 70f780de3c58b074ea9f9362cac73fcb, type: 3}
   cooldown: 0
   level: 0
   maxLevel: 10
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Meteor
-  icon: {fileID: 21300000, guid: cfeb52c1158468445be82e5c877e4f1a, type: 3}
+  icon: {fileID: 21300000, guid: 300abdf8cbdd5c742a05b6506767fd64, type: 3}
   cooldown: 5
   level: 0
   maxLevel: 15
@@ -1396,7 +1396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Max health
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: bb67b03c2969d104caba950c446f8c8d, type: 3}
   cooldown: 0
   level: 0
   maxLevel: 10
